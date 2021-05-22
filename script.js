@@ -24,7 +24,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = 'No Number!!';
     //When player Wins
   } else if (guess == secretNumber) {
-    document.querySelector('.message').textContent = 'Match!!';
+    document.querySelector('.message').textContent = 'Match!!🏆 ';
     document.querySelector('.number').textContent = secretNumber;
 
     document.querySelector('body').style.backgroundColor = '#60b347';
@@ -38,20 +38,20 @@ document.querySelector('.check').addEventListener('click', function () {
     //when the guess is too high
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too High you punk!!!';
+      document.querySelector('.message').textContent = 'Too High! try a smaller number📈 !!!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      document.querySelector('.message').textContent = 'you lost!!';
+      document.querySelector('.message').textContent = 'you lost💥!!';
       document.querySelector('.score').textContent = 0;
     } //when the guess is too low
   } else if (guess < secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too low you bastard!!';
+      document.querySelector('.message').textContent = 'Too low try a bigger number📉!!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      document.querySelector('.message').textContent = 'you lost!!';
+      document.querySelector('.message').textContent = 'you lost💥!!';
       document.querySelector('.score').textContent = 0;
     }
   }

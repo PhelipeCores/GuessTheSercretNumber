@@ -38,7 +38,7 @@ document.querySelector('.check').addEventListener('click', function () {
     //when the guess is too high
   } else if (guess > secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too High! try a smaller number📈 !!!';
+      document.querySelector('.message').textContent = 'Too High! 📈 !!!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -47,7 +47,7 @@ document.querySelector('.check').addEventListener('click', function () {
     } //when the guess is too low
   } else if (guess < secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too low try a bigger number📉!!';
+      document.querySelector('.message').textContent = 'Too low! 📉!!';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
